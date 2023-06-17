@@ -6,7 +6,7 @@ class Pila:
     def __init__(self):
         self.items = []
 
-    def esta_vacia(self):
+    def estaVacia(self):
         return len(self.items) == 0
 
     def apilar(self, dato):
@@ -23,7 +23,7 @@ class Pila:
         return False
 
 #Definimos el menu a mostrar al usuario para ejecuar la accion de su eleccion a la pila.
-def mostrar_menu():
+def mostrarMenu():
     print("1. Agregar elemento a la pila")
     print("2. Eliminar elemento de la pila")
     print("3. Buscar elemento en la pila")
@@ -35,7 +35,7 @@ pila = Pila()
 # Creamos el bucle while que permite que el programa se ejecute continuamente hasta que se elija la 
 # opcion de salir. 
 while True:
-    mostrar_menu()
+    mostrarMenu()
     opcion = input("Ingrese una opcion: ")
 
     if opcion == "1":
